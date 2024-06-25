@@ -11,7 +11,7 @@
 ## Work Experience
 **Codes Commanders**
 October 2023 - May 2024, Front-end Web Developer (React)
-
+---
 Developed new client-side application components according to the Figma design (React, TypeScript, CSS modules)
 Utilized global state management (Redux)
 Integrated and modified components from Material UI
