@@ -1,3 +1,3 @@
 # rsschool-cv
 ## Бурлыко Дмитрий
-demos-prog
+github: demos-prog
