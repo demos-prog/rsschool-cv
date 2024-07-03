@@ -3,135 +3,279 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+    </style>
     <link rel="stylesheet" href="./style.css" />
     <title>Burlyko Dmitry</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/Photo.jpg" />
+    <link rel="icon" type="image/x-icon" href="./img/Photo.jpg" />
   </head>
 
   <body>
-    <div id="container">
+    <div id="wrapper">
+
       <header>
-        <div class="nameContainer">
-          <img class="photo" src="./assets//images/Photo.jpg" alt="photo" />
-          <h1 id="name">Burlyko Dmitry</h1>
+        <div id="logo_wrap">
+          <img id="photo" src="/img/Photo.jpg" alt="Photo">
+          <a href="">Burlyko Dmitry</a>
         </div>
-        <nav>
-          <a href="#main_section">Home</a>
-          <a href="#footer_section">Contacts</a>
+        <nav id="first_nav">
+          <ul>
+            <li><a href="#home_section" class="scroll-to">Home</a></li>
+            <li><a href="#about_section" class="scroll-to">About</a></li>
+            <li><a href="#projects_section" class="scroll-to">Projects</a></li>
+            <li><a href="#contacts_section" class="scroll-to">Contacts</a></li>
+          </ul>
+        </nav>
+        <nav id="second_nav">
+          <div class="navbar">
+            <div class="nav-container">
+              <input class="checkbox" type="checkbox" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>
+              <ul class="menu-items">
+                <li class="menu_button"><a href="#home_section" class="scroll-to">Home</a></li>
+                <li class="menu_button"><a href="#about_section" class="scroll-to">About</a></li>
+                <li class="menu_button"><a href="#projects_section" class="scroll-to">Projects</a></li>
+                <li class="menu_button"><a href="#contacts_section" class="scroll-to">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </header>
-
-      <main>
-        <section id="main_section">
-          <div>
-            <h2>Front-end/Full-stack Web Developer</h2>
-
-            <div class="sect">
-              <h3>Contact Information</h3>
-              <ul>
-                <li>Phone: +375 (25) 517-11-52</li>
-                <li>Email: demosne@gmail.com</li>
-                <li>Telegram: @Dmitry_web</li>
-                <li>
-                  <a
-                    rel="noopener"
-                    target="_blank"
-                    href="https://www.linkedin.com/in/dima-burlyko-972461214/"
-                    >LinkedIn</a
-                  >
-                </li>
-                <li>
-                  <a
-                    rel="noopener"
-                    target="_blank"
-                    href="https://github.com/demos-prog"
-                    >GitHub</a
-                  >
-                </li>
-                <li>
-                  <a
-                    title="f"
-                    rel="noopener"
-                    href="https://portfolio2-two-blue.vercel.app/"
-                    target="_blank"
-                    >Portfolio</a
-                  >
-                </li>
-              </ul>
+  
+      <div id="socials_field">
+        <a rel="noopener" target="_blank" href="https://t.me/Dmitry_web">
+          <img class="social_icon" src="/img/telegram_icon.svg" alt="telegram">
+        </a>
+        <a rel="noopener"  target="_blank"
+          href="https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D0%B1%D1%83%D1%80%D0%BB%D1%8B%D0%BA%D0%BE-972461214">
+          <img class="social_icon" src="/img/linkedin_icon.svg" alt="linkedin">
+        </a>
+        <a target="_blank" href="viber://add?number=375255171152">
+          <img class="social_icon" src="/img/viber_icon.svg" alt="viber">
+        </a>
+        <a rel="noopener"  target="_blank" href="https://github.com/demos-prog">
+          <img class="social_icon" src="/img/github_rep_icon.svg" alt="github">
+        </a>
+      </div>
+  
+      <section id="home_section">
+        <div class="container">
+          <div id="home_cont">
+            <img id="photoOnMobile" src="/img/Photo.jpg" alt="Photo">
+            <br>
+            <div>
+              <p>Hello stranger, my name is</p>
+              <h1>Burlyko Dmitry</h1>
             </div>
-
-            <div class="sect">
-              <h3>Work Experience</h3>
-              <p>October 2023 - May 2024, Front-end Web Developer (React)</p>
-              <ul>
-                <li>
-                  Developed new client-side application components according to
-                  the Figma design (React, TypeScript, CSS modules)
-                </li>
-                <li>Utilized global state management (Redux)</li>
-                <li>Integrated and modified components from Material UI</li>
-                <li>Handled and submitted form data</li>
-                <li>
-                  Configured page routing in a multi-page application
-                  (React-Router)
-                </li>
-                <li>
-                  Debugged the interaction between the client-side and
-                  server-side (REST API)
-                </li>
-                <li>
-                  Participated in discussions about the application structure
-                  and functionality with designers, business analysts, and
-                  Back-end developers
-                </li>
-                <li>Refactored and fixed bugs</li>
-              </ul>
-            </div>
-
-            <div class="sect">
-              <h3>Skills</h3>
-              <div id="skillsCont"></div>
-            </div>
-
-            <div class="sect">
-              <h3>Languages</h3>
-              <span>English (B1-Intermediate)</span>
-            </div>
-
-            <div class="sect">
-              <h3>Education</h3>
-              <span
-                >Engineer-Technologist of Mechanical Engineering (BarSU
-                2009-2014)</span
-              >
+            <br>
+            <br>
+            <p>On this site you can find some information about me, as well as my contacts.</p>
+            <br>
+            <br>
+            <h2>You're welcome :)</h2>
+            <div id="scrollerWrap">
+              <div id="scroller"></div>
             </div>
           </div>
-        </section>
-      </main>
-
-      <section id="footer_section">
-        <h3>Info</h3>
-        <footer>
-          <a rel="noopener" target="_blank" href="https://github.com/demos-prog"
-            >My GitHub</a
-          >
-          <span>2024</span>
-          <div>
-            <img src="https://rs.school/images/rs_school_js.svg" alt="logo" />
-            <a
-              rel="noopener"
-              target="_blank"
-              href="https://rs.school/courses/javascript-preschool-ru"
-              >RS-shool</a
-            >
-          </div>
-        </footer>
+        </div>
       </section>
+  
+      <section id="about_section">
+        <div class="container">
+          <div id="about_cont">
+            <h2>About Me</h2>
+            <br>
+            <div class="purpleLine"></div>
+            <br>
+            <p id="qwe">Here you will find more information about me, what I do, and my current skills mostly in terms of
+              programming and technology</p>
+            <br>
+            <br>
+            <div id="infoBlock">
+              <div id="text_info">
+                <h2><u>Get to know me</u></h2>
+                <br>
+                <p>I learned <b>Front-end</b> and continue to learn it on my own for several years with some breaks for
+                  other tools. I've
+                  created a few home projects. Check out some of my work in the <b>Projects</b> section.</p>
+                <br>
+                <p>I don't need a mentor behind my back, just give me a task and get the result!</p>
+                <br>
+                <p>What I do:</p>
+                <p>- Layout according to layouts (FIGMA) using HTML, CSS, JS: completed a series of layout works at the
+                  beginning of my studies</p>
+                <p>- Application development on React + TypeScript: completed a series of pet projects + being a member of
+                  a team of volunteer developers to create an MVP product</p>
+                <p>- Interaction with APIs: often use interaction with various third-party APIs in projects</p>
+                <p>- Teamwork</p>
+                <p>- Use of CSS libraries (Material UI)</p>
+                <br>
+                <p>Currently I live in Dzerzhinsk (Belarus) with my family. I work as a mechanical engineer and am
+                  learning Frontend tools to make it my main profession.</p>
+                <br>
+                <p>I'm open to <b>Job</b> opportunities where I can contribute, learn and grow. If you have a good
+                  opportunity that matches my skills and experience then don't hesitate to <b>contact</b> me.</p>
+              </div>
+              <div id="skills_info">
+                <h2><u>My Skills</u></h2>
+                <br>
+                <div id="skills"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section id="projects_section">
+        <div class="container">
+          <div id="projects_cont">
+            <h2>Projects</h2>
+            <br>
+            <div class="purpleLine"></div>
+            <br>
+            <p>Here you will find some of the personal projects that I created.</p>
+            <br>
+            <p>* <u>You can click on the image to go to the app</u> !</p>
+            <br>
+            <br>
+            <h2>Here are some of my React JS based projects:</h2>
+            <br>
+            <br>
+            <div class="projects">
+  
+              <div class="project">
+                <a rel="noopener"  href="https://web-store-one.vercel.app/" target="_blank">
+                  <img class="project_photo" src="/img/web_store2.jpg" alt="web_store2">
+                </a>
+                <div class="description">
+                  <p><b>Web Store.</b> In this application, you can filter products by category, search for a specific
+                    one,
+                    add to cart and change their quantity.</p>
+                  <p>Technologies used:
+                  <div class="skills2">
+                    <span class="skill2">TypeScript</span>
+                    <span class="skill2">React</span>
+                    <span class="skill2">React-query</span>
+                    <span class="skill2">REST API</span>
+                  </div>
+                  </p>
+                  <p><a rel="noopener"  href="https://github.com/demos-prog/web_store" target="_blank">Github link</a></p>
+                </div>
+              </div>
+  
+              <div class="project">
+                <a rel="noopener"  href="https://tic-tac-toe-nine-rosy.vercel.app/" target="_blank">
+                  <img class="project_photo" src="/img/tic-tac-toe.jpg" alt="tic-tac-toe">
+                </a>
+                <div class="description">
+                  <p><b>Tic-Tac-Toe game. </b>Just a normal tic-tac-toe game with victory counters.</p>
+                  <p>Technologies used:
+                  <div class="skills2">
+                    <span class="skill2">TypeScript</span>
+                    <span class="skill2">React</span>
+                  </div>
+                  </p>
+                  <p><a rel="noopener"  href="https://github.com/demos-prog/tic_tac_toe" target="_blank">Github link</a></p>
+                </div>
+              </div>
+  
+              <div class="project">
+                <a rel="noopener"  href="https://weather-app2-ashy.vercel.app/" target="_blank">
+                  <img class="project_photo" src="/img/weather_app_img.jpg" alt="weather">
+                </a>
+                <div class="description">
+                  <p><b>Weather forecast.</b> In this application, you can enter the desired city and see the weather
+                    forecast for three days ahead.</p>
+                  <p>Technologies used:
+                  <div class="skills2">
+                    <span class="skill2">React</span>
+                    <span class="skill2">REST API</span>
+                  </div>
+                  </p>
+                  <p><a rel="noopener"  href="https://github.com/demos-prog/weather-app2" target="_blank">Github link</a></p>
+                </div>
+              </div>
+  
+              <div class="project">
+                <a rel="noopener"  href="https://todolist-app-flame.vercel.app/" target="_blank">
+                  <img class="project_photo" src="/img/todo_app_img.JPG" alt="to_do_app">
+                </a>
+                <div class="description">
+                  <p><b>ToDo list.</b> This is a typical todo app with filtering and an additional hashtag feature that
+                    can also be used for
+                    filtering.</p>
+                  <p>Technologies used:
+                  <div class="skills2">
+                    <span class="skill2">React</span>
+                  </div>
+                  </p>
+                  <p><a rel="noopener"  href="https://github.com/demos-prog/todolist-app" target="_blank">Github link</a></p>
+                </div>
+              </div>
+  
+  
+  
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section id="contacts_section">
+        <div class="container">
+          <div id="contacts_cont">
+            <h2>Contacts</h2>
+            <br>
+            <div class="purpleLine"></div>
+            <br>
+            <p>Here is my contact information:</p>
+            <br>
+            <br>
+            <p>Phone: +375 (25) 517-11-52</p>
+            <br>
+            <p>Email: demosne@gmail.com</p>
+            <br>
+            <p>
+              <a rel="noopener"  target="_blank"
+                href="https://drive.google.com/file/d/1KJnaOLb0rdxcYDFlQ7MH4YLUEyuK9PH9/view?usp=sharing">
+                <u>Dowload the resume (rus)</u>
+              </a>
+            </p>
+            <br>
+            <p>
+              <a rel="noopener"  target="_blank"
+                href="https://drive.google.com/file/d/1CcxKpCyPunNyNluxOYRKBH3cvCyaqSUb/view?usp=sharing">
+                <u>Dowload the CV (eng)</u>
+              </a>
+            </p>
+            <br>
+            <div id="contact_buttons">
+              <a rel="noopener"  target="_blank" href="https://t.me/Dmitry_web">
+                <img class="social_icon" src="/img/telegram_icon.svg" alt="telegram">
+              </a>
+              <a rel="noopener"  target="_blank"
+                href="https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D0%B1%D1%83%D1%80%D0%BB%D1%8B%D0%BA%D0%BE-972461214">
+                <img class="social_icon" src="/img/linkedin_icon.svg" alt="linkedin">
+              </a>
+              <a target="_blank" href="viber://add?number=375255171152">
+                <img class="social_icon" src="/img/viber_icon.svg" alt="viber">
+              </a>
+              <a rel="noopener"  target="_blank" href="https://github.com/demos-prog">
+                <img class="social_icon" src="/img/github_rep_icon.svg" alt="github">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+  
     </div>
+  
 
     <script>
-      const skillsCont = document.querySelector("#skillsCont");
-
       const skills = [
         "HTML",
         "CSS",
@@ -157,12 +301,41 @@
         "Java Core",
       ];
 
+      // showing skills
+      const skills_elem = document.querySelector("#skills");
+
       skills.forEach((skill) => {
         const div = document.createElement("div");
-        div.setAttribute("class", "skill");
+        div.className = "skill";
         div.innerText = skill;
-        skillsCont.appendChild(div);
+        skills_elem.append(div);
       });
+
+      // closing burger menu after selecting section
+      const menu_buttons = document.querySelectorAll(".menu_button");
+      const checkbox = document.querySelector(".checkbox");
+
+      menu_buttons.forEach((el) => {
+        el.addEventListener("click", () => {
+          if (checkbox.checked) checkbox.checked = false;
+        });
+      });
+
+      // scroll
+      const anchors = document.querySelectorAll("a.scroll-to");
+
+      for (let anchor of anchors) {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const blockID = anchor.getAttribute("href");
+
+          document.querySelector(blockID).scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        });
+      }
     </script>
   </body>
 </html>
