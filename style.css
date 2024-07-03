@@ -1,9 +1,56 @@
-header{
+#container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 #name {
   font-weight: bold;
-  color: green;
+}
+
+.photo {
+  width: 50px;
+  border-radius: 10px;
+}
+
+.nameContainer,
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.sect {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+#skillsCont {
+  gap: 15px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.skill {
+  background-color: cadetblue;
+  padding: 4px;
+  border-radius: 3px;
+  color: white;
+}
+
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }

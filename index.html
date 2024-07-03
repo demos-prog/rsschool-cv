@@ -1,114 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Burlyko Dmitry</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/Photo.jpg" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Burlyko Dmitry</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <a href="#main_section">Home</a>
-      <a href="#footer_section">Contacts</a>
-    </nav>
-    <h1 id="name">Burlyko Dmitry</h1>
-  </header>
-
-  <section id="main_section">
-    <main>
-      <div>
-        <h2>Front-end/Full-stack Web Developer</h2>
-
-        <div>
-          <h3>Contact Information</h3>
-          <ul>
-            <li>Phone: +375 (25) 517-11-52</li>
-            <li>Email: demosne@gmail.com</li>
-            <li>Telegram: @Dmitry_web</li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/dima-burlyko-972461214/">LinkedIn</a></li>
-            <li><a target="_blank" href="https://github.com/demos-prog">GitHub</a></li>
-          </ul>
+  <body>
+    <div id="container">
+      <header>
+        <div class="nameContainer">
+          <img class="photo" src="./assets//images/Photo.jpg" alt="photo" />
+          <h1 id="name">Burlyko Dmitry</h1>
         </div>
+        <nav>
+          <a href="#main_section">Home</a>
+          <a href="#footer_section">Contacts</a>
+        </nav>
+      </header>
 
-        <div>
-          <h3>Work Experience</h3>
-          <p>October 2023 - May 2024, Front-end Web Developer (React)</p>
-          <ul>
-            <li>Developed new client-side application components according to the Figma design (React, TypeScript, CSS
-              modules)</li>
-            <li>Utilized global state management (Redux)</li>
-            <li>Integrated and modified components from Material UI</li>
-            <li>Handled and submitted form data</li>
-            <li>Configured page routing in a multi-page application (React-Router)</li>
-            <li>Debugged the interaction between the client-side and server-side (REST API)</li>
-            <li>Participated in discussions about the application structure and functionality with designers, business
-              analysts,
-              and Back-end developers</li>
-            <li>Refactored and fixed bugs</li>
-          </ul>
-        </div>
+      <section id="main_section">
+        <main>
+          <div>
+            <h2>Front-end/Full-stack Web Developer</h2>
 
-        <div>
-          <h3>Portfolio</h3>
-          <a href="https://portfolio2-two-blue.vercel.app/" target="_blank" rel="portfolio"></a>
-        </div>
+            <div class="sect">
+              <h3>Contact Information</h3>
+              <ul>
+                <li>Phone: +375 (25) 517-11-52</li>
+                <li>Email: demosne@gmail.com</li>
+                <li>Telegram: @Dmitry_web</li>
+                <li>
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/dima-burlyko-972461214/"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://github.com/demos-prog"
+                    >GitHub</a
+                  >
+                </li>
+                <li>
+                  <a
+                    title="f"
+                    rel="noopener"
+                    href="https://portfolio2-two-blue.vercel.app/"
+                    target="_blank"
+                    rel="portfolio"
+                    >Portfolio</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-        <div>
-          <h3>Skills</h3>
-          <ul>
-            <li></li>
-            <li></li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SCSS</li>
-            <li>CSS modules</li>
-            <li>JavaScript</li>
-            <li>React JS</li>
-            <li>React-router</li>
-            <li>Next JS</li>
-            <li>Styled Components</li>
-            <li>TypeScript</li>
-            <li>Redux</li>
-            <li>Recoil</li>
-            <li>Zustand</li>
-            <li>GitHub</li>
-            <li>Vite</li>
-            <li>Material UI</li>
-            <li>Ant design</li>
-            <li>REST API</li>
-            <li>Node JS</li>
-            <li>Express</li>
-            <li>MongoDB</li>
-            <li>Java Core</li>
-          </ul>
-        </div>
+            <div class="sect">
+              <h3>Work Experience</h3>
+              <p>October 2023 - May 2024, Front-end Web Developer (React)</p>
+              <ul>
+                <li>
+                  Developed new client-side application components according to
+                  the Figma design (React, TypeScript, CSS modules)
+                </li>
+                <li>Utilized global state management (Redux)</li>
+                <li>Integrated and modified components from Material UI</li>
+                <li>Handled and submitted form data</li>
+                <li>
+                  Configured page routing in a multi-page application
+                  (React-Router)
+                </li>
+                <li>
+                  Debugged the interaction between the client-side and
+                  server-side (REST API)
+                </li>
+                <li>
+                  Participated in discussions about the application structure
+                  and functionality with designers, business analysts, and
+                  Back-end developers
+                </li>
+                <li>Refactored and fixed bugs</li>
+              </ul>
+            </div>
 
-        <div>
-          <h3>Languages</h3>
-          <span>English (B1-Intermediate)</span>
-        </div>
+            <div class="sect">
+              <h3>Skills</h3>
+              <div id="skillsCont"></div>
+            </div>
 
-        <div>
-          <h3>Education</h3>
-          <span>Engineer-Technologist of Mechanical Engineering (BarSU 2009-2014)</span>
-        </div>
-      </div>
-    </main>
-  </section>
+            <div class="sect">
+              <h3>Languages</h3>
+              <span>English (B1-Intermediate)</span>
+            </div>
 
-  <section id="footer_section">
-    <footer>
-      <a target="_blank" href="https://github.com/demos-prog">GitHub</a>
-      <span>2024</span>
-      <div>
-        <img src="https://rs.school/images/rs_school_js.svg" alt="logo">
-        <a target="_blank" href="https://rs.school/courses/javascript-preschool-ru">RS-shool</a>
-      </div>
-    </footer>
-  </section>
-</body>
+            <div class="sect">
+              <h3>Education</h3>
+              <span
+                >Engineer-Technologist of Mechanical Engineering (BarSU
+                2009-2014)</span
+              >
+            </div>
+          </div>
+        </main>
+      </section>
 
+      <section id="footer_section">
+        <footer>
+          <a rel="noopener" target="_blank" href="https://github.com/demos-prog"
+            >My GitHub</a
+          >
+          <span>2024</span>
+          <div>
+            <img src="https://rs.school/images/rs_school_js.svg" alt="logo" />
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://rs.school/courses/javascript-preschool-ru"
+              >RS-shool</a
+            >
+          </div>
+        </footer>
+      </section>
+    </div>
+
+    <script>
+      const skillsCont = document.querySelector("#skillsCont");
+
+      const skills = [
+        "HTML",
+        "CSS",
+        "SCSS",
+        "CSS modules",
+        "JavaScript",
+        "React JS",
+        "React-router",
+        "Next JS",
+        "Styled Components",
+        "TypeScript",
+        "Redux",
+        "Recoil",
+        "Zustand",
+        "GitHub",
+        "Vite",
+        "Material UI",
+        "Ant design",
+        "REST API",
+        "Node JS",
+        "Express",
+        "MongoDB",
+        "Java Core",
+      ];
+
+      skills.forEach((skill) => {
+        const div = document.createElement("div");
+        div.setAttribute("class", "skill");
+        div.innerText = skill;
+        skillsCont.appendChild(div);
+      });
+
+    </script>
+  </body>
 </html>
