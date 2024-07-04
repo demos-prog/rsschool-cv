@@ -75,10 +75,6 @@ h6 {
   font-family: "Roboto", sans-serif;
 }
 
-h2{
-  font-size: 800px;
-}
-
 #wrapper {
   max-width: 1920px;
 }
@@ -95,7 +91,7 @@ h1 {
 }
 
 h2 {
-  font-size: large;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -165,7 +161,7 @@ a {
       rgba(245, 245, 245, 0.8),
       rgba(245, 245, 245, 0.8)
     ),
-    url(../img/common-bg.svg);
+    url(./img/common-bg.svg);
   background-position: center;
   background-size: inherit;
   height: 100vh;
@@ -203,6 +199,19 @@ a {
 
 .navbar .nav-container a:hover {
   color: blueviolet;
+}
+
+
+#footerInfo{
+  font-size: 20px;
+  height: 100px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+#footLogo{
+  height: 60px;
 }
 
 .nav-container {
@@ -458,7 +467,7 @@ a {
       rgba(245, 245, 245, 0.8),
       rgba(245, 245, 245, 0.8)
     ),
-    url(../img/common-bg.svg);
+    url(./img/common-bg.svg);
   background-position: center;
   background-size: inherit;
 }
