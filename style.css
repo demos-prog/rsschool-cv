@@ -1,0 +1,136 @@
+.wrapper {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1200px;
+}
+
+header {
+  white-space: nowrap;
+  padding-top: 30px;
+  width: 100%;
+  background-image: url('./assets/start-screen-gradient-background.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+#headerInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logoName {
+  font-family: Georgia;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 35.2px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #F1CDB3;
+}
+
+.logoSubName {
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14.95px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+#links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.link a {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #CDCDCD;
+  transition: .2s;
+}
+
+.link a:hover {
+  color: #FAFAFA;
+}
+
+.selected {
+  border-bottom: 3px solid #F1CDB3;
+}
+
+.selected a {
+  color: #FAFAFA;
+  cursor: default;
+}
+
+#headerContent {
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#info {
+  display: flex;
+  max-width: 460px;
+  white-space: wrap;
+  flex-direction: column;
+  gap: 42px;
+  align-items: flex-start;
+}
+
+#notOnly {
+  width: 310px;
+  font-family: Georgia;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 57.2px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+#headerTxt {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #CDCDCD;
+}
+
+.CustomButton {
+  top: 270px;
+  padding: 15px 45px 15px 45px;
+  border-radius: 26px;
+  opacity: 0px;
+  background: #F1CDB3;
+  font-family: Georgia;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22.1px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #292929;
+  transition: .2s;
+}
+
+
+.CustomButton:hover {
+  background-color: #FDDCC4;
+}
+
+#mainDog {
+  width: 650px;
+}
