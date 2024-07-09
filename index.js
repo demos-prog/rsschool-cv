@@ -12,7 +12,7 @@ const swiper = new Swiper('.swiper', {
 
 const sliders = document.querySelectorAll('.swiper-slide')
 
-sliders.forEach((slider)=>{
+sliders.forEach((slider) => {
   slider.setAttribute('style', 'width: 270px; margin-right: 90px;')
 })
 
@@ -20,15 +20,43 @@ sliders.forEach((slider)=>{
 // scroll
 const anchors = document.querySelectorAll('a.scroll-to')
 
-for (let anchor of anchors) {
+anchors.forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault()
 
     const blockID = anchor.getAttribute('href')
-
     document.querySelector(blockID).scrollIntoView({
       behavior: 'smooth',
       block: 'start'
     })
   })
+})
+
+
+// modal window
+const modal = document.querySelector(".modal");
+const btns = document.querySelectorAll(".learnMoreBtn");
+const closeBtns = document.querySelectorAll(".close-button");
+
+btns.forEach((btn) => {
+  btn.onclick = function () {
+    document.querySelector('#modal-name').textContent = this.dataset.name;
+    document.querySelector('#modal-breed').textContent = this.dataset.breed;
+    document.querySelector('#modal-description').textContent = this.dataset.description;
+    document.querySelector('#modal-photo').setAttribute('src', `${this.dataset.photo}`);
+
+    modal.style.display = "block";
+  }
+})
+
+closeBtns.forEach((closeBtn) => {
+  closeBtn.onclick = function () {
+    modal.style.display = "none";
+  }
+})
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }

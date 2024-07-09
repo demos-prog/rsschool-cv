@@ -17,10 +17,10 @@
   <header>
     <div class="wrapper">
       <div id="headerInfo">
-        <div class="logo">
+        <a href="#" class="logo">
           <h1 class="logoName">Cozy House</h1>
           <span class="logoSubName">Shelter for pets in Boston</span>
-        </div>
+        </a>
         <nav>
           <ul id="links">
             <li class="link selected">
@@ -85,31 +85,51 @@
             <div class="swiper-slide sliderCard">
               <img class="petsPhoto" src="./assets/pets-katrine.png" alt="petsPhoto">
               <span class="petsName">Katrine</span>
-              <button class="learnMoreBtn">Learn more</button>
+              <button class="learnMoreBtn" id="Katrine" data-name="Katrine" data-breed="Cat - British Shorthair"
+                data-description="Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations."
+                data-photo="./assets/pets-katrine.png">
+                Learn more
+              </button>
             </div>
+
             <div class="swiper-slide sliderCard">
               <img class="petsPhoto" src="./assets/pets-jennifer.png" alt="petsPhoto">
               <span class="petsName">Jennifer</span>
               <button class="learnMoreBtn">Learn more</button>
             </div>
+
             <div class="swiper-slide sliderCard">
               <img class="petsPhoto" src="./assets/pets-woody.png" alt="petsPhoto">
               <span class="petsName">Woody</span>
               <button class="learnMoreBtn">Learn more</button>
             </div>
+
             <div class="swiper-slide sliderCard">
               <img class="petsPhoto" src="./assets/pets-freddi.png" alt="petsPhoto">
               <span class="petsName">Freddi</span>
               <button class="learnMoreBtn">Learn more</button>
             </div>
+
             <div class="swiper-slide sliderCard">
               <img class="petsPhoto" src="./assets/pets-sophia.png" alt="petsPhoto">
               <span class="petsName">Sophia</span>
               <button class="learnMoreBtn">Learn more</button>
             </div>
           </div>
-
         </div>
+
+        <div class="modal">
+          <div class="modal-content">
+            <img id="modal-photo" src="" alt="photo">
+            <div class="modal-info">
+              <span class="close-button">&times;</span>
+              <h2 id="modal-name"></h2>
+              <span id="modal-breed"></span>
+              <p id="modal-description"></p>
+            </div>
+          </div>
+        </div>
+
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
 
