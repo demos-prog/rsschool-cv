@@ -35,11 +35,13 @@ anchors.forEach((anchor) => {
 
 // modal window
 const modal = document.querySelector(".modal");
+const body = document.querySelector("body");
 const btns = document.querySelectorAll(".learnMoreBtn");
 const closeBtns = document.querySelectorAll(".close-button");
 
 btns.forEach((btn) => {
   btn.onclick = function () {
+    body.style.overflow = "hidden";
     document.querySelector('#modal-name').textContent = this.dataset.name;
     document.querySelector('#modal-breed').textContent = this.dataset.breed;
     document.querySelector('#modal-description').textContent = this.dataset.description;
@@ -52,11 +54,13 @@ btns.forEach((btn) => {
 closeBtns.forEach((closeBtn) => {
   closeBtn.onclick = function () {
     modal.style.display = "none";
+    body.style.overflow = "auto";
   }
 })
 
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    body.style.overflow = "auto";
   }
 }
