@@ -415,7 +415,7 @@ h3 {
   color: #545454;
 }
 
-.margin{
+.margin {
   margin-top: 55px;
   padding-bottom: 100px;
 }
@@ -435,4 +435,50 @@ h3 {
 
 ::-webkit-scrollbar-button {
   display: none;
+}
+
+#donationSection {
+  background-color: #F6F6F6;
+}
+
+#donationContainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.donationTitleWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#donationInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+#bankName {
+  font-family: Georgia;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16.5px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #545454;
+}
+
+.donationNotificztion {
+  max-width: 380px;
+  font-family: Arial;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #B2B2B2;
 }
