@@ -489,10 +489,10 @@ footer {
 }
 
 .footerContainer {
+  padding-top: 40px;
   display: flex;
-  padding: 40px 40px 0 40px;
   align-items: flex-end;
-  gap: 160px;
+  justify-content: space-between;
 }
 
 .footerPart {
@@ -500,9 +500,11 @@ footer {
   flex-direction: column;
   gap: 40px;
   height: 294px;
+  width: 278px;
 }
 
-.footerTitleWrap h3{
+.footerTitleWrap h3 {
+  white-space: nowrap;
   font-family: Georgia;
   font-size: 35px;
   font-weight: 400;
@@ -516,6 +518,9 @@ footer {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.footerInfoItem a {
   font-family: Georgia;
   font-size: 20px;
   font-weight: 400;
@@ -523,8 +528,4 @@ footer {
   letter-spacing: 0.06em;
   text-align: left;
   color: #F1CDB3;
-}
-
-.footerInfoItem span {
-  width: 260px;
 }
